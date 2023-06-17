@@ -10,23 +10,23 @@
   padding: 10px;
   color: #ffffff;
   justify-self: center;
-  width: 60%;
-  padding-top: 17%;
+  width: 50%;
+  margin-left: 3%;
 }
 
 .home-heading-ele {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 800;
 }
 
 .home-para-ele {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
 }
 
 .home-btn {
   background-color: #6366f1;
-  font-size: 10px;
+  font-size: 14px;
   color: #ffffff;
   font-weight: 600;
   padding: 10px;
@@ -37,14 +37,18 @@
 
 @media screen and (max-width: 767px) {
   .home-heading-ele {
-    font-size: 20px;
+    font-size: 24px;
   }
   .home-container {
     background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
     height: 120vh;
+
+    .home-content-container {
+      width: 70%;
+    }
   }
 
   .home-para-ele {
-    font-size: 12px;
+    font-size: 16px;
   }
 }

@@ -1,4 +1,4 @@
-.header-container {
+.header-large-container {
   display: flex;
   align-items: center;
   padding: 20px;
@@ -7,7 +7,7 @@
 }
 
 .home-logo {
-  width: 13%;
+  width: 60%;
 }
 
 .tab-list {
@@ -15,9 +15,11 @@
   list-style: none;
   align-items: center;
   padding: 10px;
+  justify-self: center;
+  margin-left: -13%;
 }
 .tab-item {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   margin-right: 20px;
 }
@@ -39,8 +41,36 @@
   border: none;
 }
 
+.header-smaller-container {
+  display: none;
+  align-items: center;
+  padding: 20px;
+  background-color: #2c364c;
+  justify-content: space-between;
+}
+
+.logout-smaller-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.header-icon {
+  height: 30px;
+  width: 30px;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 767px) {
   .home-logo {
-    width: 18%;
+    width: 40%;
+  }
+
+  .header-large-container {
+    display: none;
+  }
+
+  .header-smaller-container {
+    display: flex;
   }
 }
